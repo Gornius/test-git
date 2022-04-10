@@ -1,0 +1,1 @@
+<a href="?model=Post">Posty</a>
