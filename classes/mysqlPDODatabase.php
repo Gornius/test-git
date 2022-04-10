@@ -18,6 +18,9 @@ class mysqlPDODatabase implements IDatabase {
     }
 
     public function query(string $query, array $binds=[]) {
+
+        echo $query;
+
         $db = $this->mysqlPDO_instance;
         $statement = $db->prepare($query); 
         foreach ($binds as $variable => $opts) {
